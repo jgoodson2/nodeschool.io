@@ -1,15 +1,9 @@
 function getShortMessages(messages) {
   // SOLUTION GOES HERE
-  // console.log(messages)
-  var lengths = messages.map(function (message) {
-    console.log(message.message)
-    //console.log((message.message.length < 50) ? 1 : 0)
-    return (message.message.length < 50) ? true : false
+  return messages.map(function (message) {
+    return message.message
+  }).filter(function (elem) {
+    return elem.length < 50
   })
-  console.log(lengths)
-
-  //   .filter(function (message) {
-  //   if (message) return message
-  // })
 }
 module.exports = getShortMessages
