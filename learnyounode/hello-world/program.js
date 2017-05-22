@@ -1,1 +1,1 @@
-console.log("HELLO WORLD")cd ..
+console.log("HELLO WORLD")
